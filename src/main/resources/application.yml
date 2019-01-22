@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/huihaoweishui/cloud-config-demo
+          search-paths: repo
+          username: huihaoweishui@163.com
+          password: xuechen106712
+      label: master
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
